@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(29, 23, 23);
+            /* background-image: url('b1.webp'); */
+            background-repeat: no-repeat;
+            background-size: 1380px;
+
+        }
+
+        .nav {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        li {
+            list-style-type: none;
+            margin: 30px;
+            padding: 20px;
+            font-size: 1.1rem;
+            color: rgb(252, 167, 136);
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        li:hover {
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+        }
+
+        #fourthele {
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .logo>img {
+            height: 70px;
+
+        }
+
+        .content,
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .entry>a {
+            color: rgb(117, 0, 0);
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            margin-right: 30px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .entry>a:hover {
+            color: white;
+            background-color: maroon;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            justify-content: space-evenly;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: justify;
+            margin: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.541);
+            padding: 50px;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            border-radius: 30px;
+        }
+        .box>a{
+            color: white;
+            margin-top: 30px;
+            background-color: rgba(141, 2, 2, 0.589);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .box>a:hover{
+            color: rgb(129, 0, 0);
+            background-color: white;
+        }
+        .box>h3{
+            margin: 10px;
+            color: rgb(156, 4, 4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h1>BANK OF SPAIN</h1>
+        </div>
+        <div class="contents">
+            <ul>
+                <a href="index.html" target="_parent" >
+                    <li id="firstele">Home</li>
+                </a>
+                <a href="loan.html">
+                    <li>Loan</li>
+                </a>
+                <a href="invest.html">
+                    <li>Invest</li>
+                </a>
+                <a href="services.html" >
+                    <li id="fourthele">Services</li>
+                </a>
+            </ul>
+        </div>
+        <div class="entry">
+            <a href="rigister.html" target="_parent">Login/SignIn</a>
+        </div>
+    </div>
+    <center>
+        <h3
+            style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: white; text-shadow: 2px 2px 2px black;  margin-top: 50px; margin-bottom: 20px;">
+            OUR SERVICES</h3>
+    </center>
+    <hr>
+    <center>
+        <div class="mainbox">
+            <div class="box">
+                <img src="credit card.png" alt=""  height="100px" >
+                <h3>CREDIT/DEBIT CARDS</h3>
+                <p>Our credit card services offer convenience and financial flexibility. With a range of card options, we provide secure and fast payment solutions for your everyday transactions. Enjoy benefits such as cashback rewards, low-interest rates, and enhanced security features to manage your finances efficiently.</p>
+                <a href="#">AVAIL</a>
+            </div>
+            <div class="box">
+        
+                <img src="flight.png" alt="" height="100px">
+                <h3>FLIGHT</h3>
+                <p> Our flight services are designed to make your travel experience seamless and enjoyable. We offer a wide selection of routes, comfortable seating, and top-notch in-flight entertainment. With a commitment to safety and punctuality, we ensure that you reach your destination with peace of mind.</p>
+                <a href="#">AVAIL</a>
+            </div>
+            <div class="box">
+                <img src="assets.png" alt="" height="100px">
+                <h3>FINANCE SEVICES</h3>
+                <p>Our finance services cater to all your financial needs. Whether you're looking for investment opportunities, personal loans, or wealth management, our team of experts is here to assist you. We provide tailored financial solutions to help you achieve your goals and secure your financial future.</p>
+                <a href="#">AVAIL</a>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div class="mainbox">
+            <div class="box">
+                <img src="online.png" alt=""  height="100px" >
+                <h3>NET BANKING</h3>
+                <p>Online payments have revolutionized the way we transact, offering convenience and security. They allow individuals and businesses to make seamless financial transactions, from purchasing goods and services to transferring money, all at the click of a button. With the growth of e-commerce, online payments have become an integral part of modern life.</p>
+                <a href="#">AVAIL</a>
+            </div>
+            <div class="box">
+        
+                <img src="movie.png" alt="" height="100px">
+                <h3>ENTERTAINMENT</h3>
+                <p> Movies are a source of entertainment and storytelling that transport audiences to different worlds, evoke emotions, and spark discussions. They have the power to reflect society, explore diverse cultures, and provide a shared experience that connects people across the globe.</p>
+                <a href="#">AVAIL</a>
+            </div>
+            <div class="box">
+                <img src="exchange.png" alt="" height="100px">
+                <h3>CURRNCY EXCHANGE</h3>
+                <p>Currency exchange plays a crucial role in international trade and travel. It enables individuals and businesses to convert one currency into another, facilitating global commerce. Exchange rates fluctuate based on economic factors, impacting the value of currencies and influencing financial decisions on a global scale.</p>
+                <a href="#">AVAIL</a>
+            </div>
+        </div>
+    </center>
+
+    
+</body>
+</html>

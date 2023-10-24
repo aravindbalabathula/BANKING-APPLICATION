@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(29, 23, 23);
+            background-image: url('b1.webp');
+            background-repeat: no-repeat;
+            background-size: 1380px;
+
+        }
+
+        .nav {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        li {
+            list-style-type: none;
+            margin: 30px;
+            padding: 20px;
+            font-size: 1.1rem;
+            color: rgb(252, 167, 136);
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        li:hover {
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+        }
+        #firstele{
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .logo>img {
+            height: 70px;
+
+        }
+
+        .content,
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .entry>a {
+            color: rgb(117, 0, 0);
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            margin-right: 30px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .entry>a:hover {
+            color: white;
+            background-color: maroon;
+        }
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            color: maroon;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 100px;
+        }
+
+        .welcome>h1 {
+            font-size: 3.4rem;
+            color: rgb(185, 0, 0);
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 2px 2px 2px rgb(255, 255, 255);
+            margin-top: 40px;
+        }
+
+        .three {
+            display: flex;
+            height: fit-content;
+            flex-direction: row;
+            width: 1000px;
+            margin-top: 50px;
+            justify-content: space-between;
+            margin-bottom: 0px;
+
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(185, 0, 0, 0.712);
+            border-radius: 30px;
+            padding: 20px;
+            text-align: justify;
+            margin-bottom: 0px;
+            margin-top: 30px;
+
+
+        }
+
+        .feature>h2 {
+            color: white;
+            margin: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        .feature:hover {
+            background-color: rgb(185, 0, 0);
+            cursor: pointer;
+        }
+
+        .about {
+            font-size: 1.4rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgba(255, 255, 255, 0.548);
+            margin-bottom: 100px;
+            margin-top: 0px;
+
+        }
+
+        .members {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 30px;
+
+
+        }
+
+        .indi {
+            display: flex;
+            flex-direction: row;
+            margin: 40px;
+        }
+
+        .read {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .read>h3 {
+            color: rgb(145, 0, 0);
+            font-size: 2rem;
+            font-family: 'Oswald', sans-serif;
+            margin: 20px;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        .read>p {
+            display: flex;
+            text-align: justify;
+            color: white;
+            font-size: 1.3rem;
+            text-shadow: 3px 3px 3px black;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .partners {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h1>BANK OF SPAIN</h1>
+        </div>
+        <div class="contents">
+            <ul>
+                <a href="" target="_parent" >
+                    <li id="firstele">Home</li>
+                </a>
+                <a href="loan.html">
+                    <li>Loan</li>
+                </a>
+                <a href="invest.html">
+                    <li>Invest</li>
+                </a>
+                <a href="services.html">
+                    <li>Services</li>
+                </a>
+            </ul>
+        </div>
+        <div class="entry">
+            <a href="rigister.html" target="_parent">Login/SignIn</a>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <h1>Welcome to the Bank of Spain</h1>
+        <div class="three">
+            <div class="feature"><img src="security.png" alt="" height="100px">
+                <h2>SECURITY</h2>
+            </div>
+            <div class="feature"><img src="money.png" alt="" height="100px">
+                <h2>FAST CASH</h2>
+            </div>
+            <div class="feature"><img src="White_Globe_Icon.png" alt="" height="100px">
+                <h2>WORLD WIDE</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="about">
+        <marquee behavior="" direction=""> THE NEXT ROBBERY IS AT THE WORLD BANK</marquee>
+    </div>
+    <center>
+        <h3
+            style="font-family: 'Montserrat', sans-serif; font-size: 3rem; color: white; text-shadow: 2px 2px 2px black;  margin-bottom: 10px;">
+            FOUNDERS</h3>
+    </center>
+    <hr>
+    <div class="members">
+        <div class="indi">
+            <div class="read">
+                <h3>PROFFESSOR</h3>
+                <p>Professor, portrayed by Álvaro Morte, is the brilliant and meticulous mastermind behind the heists in "Money Heist." Often staying one step ahead of the authorities. His calm demeanor, unwavering focus, and ability to adapt under pressure make him a central and captivating character in the series.</p>
+            </div>
+            <div class="img">
+                <img src="Professor_(Money_Heist).jpg" height="300px">
+            </div>
+        </div>
+        <div class="indi">
+            <div class="img">
+                <img src="tokyo.jpg" height="300px">
+            </div>
+            <div class="read">
+                <h3>TOKYO</h3>
+                <p>Tokyo, played by Úrsula Corberó, is a complex character known for her fiery spirit and emotional depth. She serves as the narrator of the series and is a key member of the heist crew. Tokyo's determination and leadership qualities, along with her complicated past, add depth to her character, making her a fan favorite.</p>
+            </div>
+        </div>
+        <div class="indi">
+            <div class="read">
+                <h3>BERLIN</h3>
+                <p> Berlin, portrayed by Pedro Alonso, is the enigmatic and charismatic leader of the group of robbers. His charm, sophistication, and ruthlessness make him a captivating but morally ambiguous character. Berlin's complex personality and relationships with other characters contribute to the intrigue and tension of the series.</p>
+            </div>
+            <div class="img">
+                <img src="berlin.JPG" height="300px">
+            </div>
+        </div>
+
+    </div>
+    <center>
+        <h3
+        style="font-family: 'Montserrat', sans-serif; font-size: 3rem; color: white; text-shadow: 2px 2px 2px black; margin-top: 30px; margin-bottom: 10px;">
+        OUR PARTNERS</h3>
+    </center>
+    <hr>
+    <div class="partners">
+        <img src="boi.png" alt="" height="100px" width='auto'>
+        <img src="world bnak.png" alt="" height="100px" width='auto'>
+        <img src="swiss bank.png" alt="" height="100px" width='auto'>
+    </div>
+
+</body>
+
+</html>

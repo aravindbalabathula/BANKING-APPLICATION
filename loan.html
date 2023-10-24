@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(29, 23, 23);
+            /* background-image: url('b1.webp'); */
+            background-repeat: no-repeat;
+            background-size: 1380px;
+
+        }
+
+        .nav {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        li {
+            list-style-type: none;
+            margin: 30px;
+            padding: 20px;
+            font-size: 1.1rem;
+            color: rgb(252, 167, 136);
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        li:hover {
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+        }
+        #secondele{
+            border-radius: 30px;
+            background-color: rgb(92, 0, 0);
+            cursor: pointer;
+            color: white;
+
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .logo>img {
+            height: 70px;
+
+        }
+
+        .content,
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .entry>a {
+            color: rgb(117, 0, 0);
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            margin-right: 30px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .entry>a:hover {
+            color: white;
+            background-color: maroon;
+        }
+
+        .about {
+            font-size: 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgba(255, 255, 255, 0.548);
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .popular1,
+        .popular2 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 40px;
+            justify-content: space-around;
+        }
+        .popular2{
+            padding: 20px;
+        }
+
+        .selects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: px;
+            margin: 10px;
+            padding: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(129, 0, 0, 0.747);
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        .selects:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgba(109, 0, 0, 0.671);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h1>BANK OF SPAIN</h1>
+        </div>
+        <div class="contents">
+            <ul>
+                <a href="index.html" target="_parent">
+                    <li>Home</li>
+                </a>
+                <a href="loan.html">
+                    <li id="secondele">Loan</li>
+                </a>
+                <a href="invest.html">
+                    <li>Invest</li>
+                </a>
+                <a href="services.html">
+                    <li>Services</li>
+                </a>
+            </ul>
+        </div>
+        <div class="entry">
+            <a href="rigister.html" target="_parent">Login/SignIn</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <marquee behavior="" direction=""> UPTO 5% OFF ON HOME LOANS</marquee>
+    </div>
+
+    <center>
+        <h2
+            style="color: rgb(151, 0, 0); font-family: 'Oswald', sans-serif; font-size: 3.4rem; text-shadow: 5px 5px 5px rgb(0, 0, 0); margin-top: 70px; ">
+            POPULAR LOANS</h2>
+    </center>
+    <hr>
+    <div class="popular1">
+        <div class="selects">
+            HOME LOAN
+        </div>
+        <div class="selects">
+            PERSONAL LOAN
+        </div>
+        <div class="selects">
+            EDUCATION LOAN
+        </div>
+    </div>
+    <div class="popular2">
+        <div class="selects">
+            CAR LOAN
+        </div>
+        <div class="selects" style="margin-right: 30px;">
+            BUSSINESS LOAN
+        </div>
+        <div class="selects">
+            RURAL LOAN
+        </div>
+    </div>
+    <center>
+        <h2
+            style="color: rgb(151, 0, 0); font-family: 'Oswald', sans-serif; font-size: 3.4rem; text-shadow: 5px 5px 5px rgb(0, 0, 0); margin-top: 50px; ">
+            LOAN AGINEST ASSETS</h2>
+    </center>
+    <hr>
+    <div class="popular1">
+        <div class="selects">
+            VEHICLE
+        </div>
+        <div class="selects">
+            EQUTIES
+        </div>
+        <div class="selects">
+            PROPERTY
+        </div>
+    </div>
+    <div class="popular2">
+        <div class="selects">
+            GOLD
+        </div>
+        <div class="selects">
+            SECURITIES
+        </div>
+        <div class="selects">
+            BONDS
+        </div>
+    </div>
+    <center>
+        <h2
+            style="color: rgb(151, 0, 0); font-family: 'Oswald', sans-serif; font-size: 3.4rem; text-shadow: 5px 5px 5px rgb(0, 0, 0); margin-top: 50px; ">
+            TERMS AND CONDITIONS</h2>
+    </center>
+    <hr>
+    <ul class="terms" style="font-size: 1.2rem;">
+        <li><strong>Loan Amount:</strong> The borrower agrees to the loan amount specified in the loan agreement. </li>
+        <li>Interest Rate: The borrower acknowledges the fixed or variable interest rate associated with the loan.</li>
+
+        <li><strong>Repayment Schedule:</strong> The borrower agrees to the repayment schedule, including the frequency (e.g., monthly,
+            quarterly), starting date, and the number of installments.</li>
+
+        <li> <strong>Late Payments:</strong> The borrower acknowledges that late payments may result in penalties, increased interest
+            rates, or other consequences as outlined in the agreement.</li>
+
+        <li><strong>Prepayment:</strong> The borrower may prepay the loan, in part or in full, but prepayment terms, if applicable, will
+            be outlined in the agreement.</li>
+
+        <li><strong>Use of Funds:</strong> The borrower acknowledges that the loan funds will be used for the purpose specified in the
+            agreement (e.g., education, home purchase, business expansion).</li>
+
+        <li><strong>Collateral (if applicable):</strong> If the loan is secured, the agreement outlines the collateral and the conditions
+            under which it may be seized in case of default.</li>
+    </ul>
+
+
+</body>
+
+</html>
